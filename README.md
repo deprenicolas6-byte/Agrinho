@@ -223,7 +223,7 @@ smart-soil/
 | 👨‍🌾 | 👩‍💻 | 👨‍🔬 |
 |---|---|---|
 | **Nicolas Francisco** | **Maria Clara** | **Gabriel Souza** |
-| Agrônomo | Desenvolvedora | Especialista IoT |
+| Desenvolvedor | Desenvolvedora | Desenvolvedor |
 
 </div>
 
