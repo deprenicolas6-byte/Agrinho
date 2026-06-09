@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico do Solo - Smart Soil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">🌱 Smart Soil</a>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="problema.html">O Problema</a></li>
+                <li><a href="solucao.html">Solução</a></li>
+                <li><a href="questionario.html" class="active">Diagnóstico</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Diagnóstico do Solo</h1>
+            <p>Responda algumas perguntas e receba recomendações personalizadas</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="quiz-container">
+                <div class="quiz-progress">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar-fill" id="progressBar" style="width: 0%"></div>
+                    </div>
+                    <span class="progress-text">Questão <span id="currentQ">1</span> de <span id="totalQ">8</span></span>
+                </div>
+
+                <form id="quizForm" class="quiz-form">
+                    <!-- Pergunta 1 -->
+                    <div class="question active" data-question="1">
+                        <h3>Qual tipo de cultura você cultiva?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="cultura" value="grãos" required>
+                                <span class="option-content">
+                                    <span class="option-icon">🌾</span>
+                                    <span>Grãos (Soja, Milho, Trigo)</span>
+                                </span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="cultura" value="hortaliças">
+                                <span class="option-content">
+                                    <span class="option-icon">🥬</span>
+                                    <span>Hortaliças e Legumes</span>
+                                </span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="cultura" value="frutas">
+                                <span class="option-content">
+                                    <span class="option-icon">🍎</span>
+                                    <span>Fruticultura</span>
+                                </span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="cultura" value="pastagem">
+                                <span class="option-content">
+                                    <span class="option-icon">🌱</span>
+                                    <span>Pastagem/Pecuária</span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 2 -->
+                    <div class="question" data-question="2">
+                        <h3>Qual o tamanho da sua propriedade?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="tamanho" value="pequena" required>
+                                <span class="option-content">Até 20 hectares</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="tamanho" value="media">
+                                <span class="option-content">20 a 100 hectares</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="tamanho" value="grande">
+                                <span class="option-content">Mais de 100 hectares</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 3 -->
+                    <div class="question" data-question="3">
+                        <h3>Qual seu maior desafio atual?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="desafio" value="agua" required>
+                                <span class="option-content">💧 Controle de irrigação/umidade</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="desafio" value="fertilizante">
+                                <span class="option-content"> Uso eficiente de fertilizantes</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="desafio" value="produtividade">
+                                <span class="option-content">📈 Aumentar produtividade</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="desafio" value="custos">
+                                <span class="option-content">💰 Reduzir custos</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 4 -->
+                    <div class="question" data-question="4">
+                        <h3>Você faz análise de solo periodicamente?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="analise" value="sempre" required>
+                                <span class="option-content">Sim, sempre que possível</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="analise" value="as_vezes">
+                                <span class="option-content">Às vezes</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="analise" value="nunca">
+                                <span class="option-content">Nunca fiz</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 5 -->
+                    <div class="question" data-question="5">
+                        <h3>Qual seu nível de conhecimento em tecnologia?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="tech" value="baixo" required>
+                                <span class="option-content">📱 Básico (uso celular)</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="tech" value="medio">
+                                <span class="option-content">💻 Intermediário</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="tech" value="alto">
+                                <span class="option-content">🖥️ Avançado</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 6 -->
+                    <div class="question" data-question="6">
+                        <h3>Você tem acesso à internet na propriedade?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="internet" value="sim" required>
+                                <span class="option-content">Sim, boa conexão</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="internet" value="parcial">
+                                <span class="option-content">Parcial/Instável</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="internet" value="nao">
+                                <span class="option-content">Não/Nenhuma</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 7 -->
+                    <div class="question" data-question="7">
+                        <h3>Qual seu principal objetivo?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="objetivo" value="sustentabilidade" required>
+                                <span class="option-content">🌍 Agricultura sustentável</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="objetivo" value="lucro">
+                                <span class="option-content">💵 Aumentar lucro</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="objetivo" value="qualidade">
+                                <span class="option-content">⭐ Melhorar qualidade</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Pergunta 8 -->
+                    <div class="question" data-question="8">
+                        <h3>Como você toma decisões sobre adubação?</h3>
+                        <div class="options">
+                            <label class="option">
+                                <input type="radio" name="decisao" value="experiencia" required>
+                                <span class="option-content">👨‍ Pela experiência</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="decisao" value="tecnico">
+                                <span class="option-content">👨‍🔬 Com técnico agrícola</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="decisao" value="tentativa">
+                                <span class="option-content">🎲 Tentativa e erro</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="quiz-navigation">
+                        <button type="button" class="btn btn-secondary" id="prevBtn" onclick="changeQuestion(-1)" disabled>Anterior</button>
+                        <button type="button" class="btn btn-primary" id="nextBtn" onclick="changeQuestion(1)">Próxima</button>
+                        <button type="submit" class="btn btn-success" id="submitBtn" style="display: none;">Ver Resultados</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Soil - Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

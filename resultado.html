@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Resultado - Smart Soil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">🌱 Smart Soil</a>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="problema.html">O Problema</a></li>
+                <li><a href="solucao.html">Solução</a></li>
+                <li><a href="questionario.html">Diagnóstico</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header resultado-header">
+        <div class="container">
+            <h1>Seu Diagnóstico</h1>
+            <p>Confira as recomendações personalizadas para sua propriedade</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="resultado-container">
+                <div class="resultado-header-box hidden">
+                    <div class="score-circle">
+                        <span id="scoreValue">0</span>
+                        <span class="score-label">Pontuação</span>
+                    </div>
+                    <h2 id="resultadoTitulo">Analisando...</h2>
+                    <p id="resultadoSubtitulo">Carregando suas recomendações</p>
+                </div>
+
+                <div class="recomendacoes-grid" id="recomendacoesContainer">
+                    <!-- Preenchido via JavaScript -->
+                </div>
+
+                <div class="plano-acao hidden" id="planoAcao">
+                    <h3>📋 Plano de Ação Recomendado</h3>
+                    <div class="acao-list" id="acaoList">
+                        <!-- Preenchido via JavaScript -->
+                    </div>
+                </div>
+
+                <div class="proximos-passos hidden" id="proximosPassos">
+                    <h3>🚀 Próximos Passos</h3>
+                    <div class="passos-grid">
+                        <div class="passo-card">
+                            <div class="passo-numero">1</div>
+                            <h4>Instale os Sensores</h4>
+                            <p>Comece com 2-3 sensores nas áreas mais críticas</p>
+                        </div>
+                        <div class="passo-card">
+                            <div class="passo-numero">2</div>
+                            <h4>Configure o App</h4>
+                            <p>Baixe o aplicativo e conecte os sensores</p>
+                        </div>
+                        <div class="passo-card">
+                            <div class="passo-numero">3</div>
+                            <h4>Acompanhe os Dados</h4>
+                            <p>Monitore diariamente e ajuste conforme recomendações</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-center hidden" id="ctaFinal">
+                    <h3>Quer implementar essas recomendações?</h3>
+                    <p>Entre em contato conosco e comece a transformar sua produção</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:contato@smartsoil.com" class="btn btn-primary">Falar com Especialista</a>
+                        <a href="questionario.html" class="btn btn-secondary">Refazer Diagnóstico</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Soil - Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Carregar resultados ao iniciar
+        window.addEventListener('load', function() {
+            carregarResultados();
+        });
+    </script>
+</body>
+</html>

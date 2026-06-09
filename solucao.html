@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução - Smart Soil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">🌱 Smart Soil</a>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="problema.html">O Problema</a></li>
+                <li><a href="solucao.html" class="active">Solução</a></li>
+                <li><a href="questionario.html">Diagnóstico</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nossa Solução</h1>
+            <p>Tecnologia acessível para transformar sua produção</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="solucao-container">
+                <div class="solucao-content hidden">
+                    <h2>Como Funciona</h2>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Instalação dos Sensores</h3>
+                            <p>Sensores IoT no solo medem umidade, pH, condutividade e nutrientes</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Coleta de Dados</h3>
+                            <p>Transmissão contínua via 3G/4G ou Wi-Fi rural</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Análise Inteligente</h3>
+                            <p>Processamento dos dados e geração de insights</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Recomendações</h3>
+                            <p>Alertas e sugestões direto no seu celular</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-demo hidden">
+                    <div class="phone-mockup large">
+                        <div class="phone-screen">
+                            <h3>SMART SOIL</h3>
+                            <div class="app-demo">
+                                <div class="demo-item">
+                                    <span>Umidade</span>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 67%"></div>
+                                    </div>
+                                    <span>67%</span>
+                                </div>
+                                <div class="demo-item">
+                                    <span>pH</span>
+                                    <span class="value">6.2</span>
+                                </div>
+                                <div class="demo-item">
+                                    <span>NPK</span>
+                                    <span class="value">12-8-15</span>
+                                </div>
+                                <div class="demo-item">
+                                    <span>Temperatura</span>
+                                    <span class="value">24°C</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-small">Ver Recomendações</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="diferenciais-grid">
+                <div class="dif-card hidden">
+                    <h3>🎯 Modelo SaaS</h3>
+                    <p>Assinatura mensal previsível que cabe no bolso</p>
+                </div>
+                <div class="dif-card hidden">
+                    <h3>📱 Interface Intuitiva</h3>
+                    <p>Baixo atrito de adoção, fácil de usar</p>
+                </div>
+                <div class="dif-card hidden">
+                    <h3>💰 Foco em ROI</h3>
+                    <p>Redução de desperdício de insumos</p>
+                </div>
+                <div class="dif-card hidden">
+                    <h3>🔄 Escalável</h3>
+                    <p>Adaptável a diferentes culturas</p>
+                </div>
+            </div>
+
+            <div class="objetivos-section hidden">
+                <h2>Objetivos</h2>
+                <div class="objetivos-list">
+                    <div class="obj-item">
+                        <span class="obj-icon">🎯</span>
+                        <span>Reduzir custos com fertilizantes e água</span>
+                    </div>
+                    <div class="obj-item">
+                        <span class="obj-icon">📈</span>
+                        <span>Aumentar produtividade por hectare</span>
+                    </div>
+                    <div class="obj-item">
+                        <span class="obj-icon">🧠</span>
+                        <span>Apoiar decisões com base em dados</span>
+                    </div>
+                    <div class="obj-item">
+                        <span class="obj-icon">🌱</span>
+                        <span>Promover agricultura mais sustentável</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-center hidden">
+                <h3>Quer saber se é para você?</h3>
+                <p>Faça nosso diagnóstico gratuito</p>
+                <a href="questionario.html" class="btn btn-primary">Fazer Diagnóstico</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Soil - Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

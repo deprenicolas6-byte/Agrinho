@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Soil - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">🌱 Smart Soil</a>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="problema.html">O Problema</a></li>
+                <li><a href="solucao.html">Solução</a></li>
+                <li><a href="questionario.html">Diagnóstico</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-title">Smart Soil</h1>
+                <p class="hero-subtitle">Agricultura de precisão acessível via análise de dados de lotes otimizando uso de insumos e produtividade em tempo real</p>
+                <p class="tagline">"Transformamos dados do solo em decisões lucrativas"</p>
+                <div class="hero-buttons">
+                    <a href="questionario.html" class="btn btn-primary">Fazer Diagnóstico Gratuito</a>
+                    <a href="solucao.html" class="btn btn-secondary">Conhecer Solução</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <h3>SMART SOIL</h3>
+                        <div class="sensor-display">
+                            <span class="sensor-value" id="heroSensor">67%</span>
+                        </div>
+                        <p>Umidade do Solo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section features-preview">
+        <div class="container">
+            <h2 class="section-title">Por que escolher o Smart Soil?</h2>
+            <div class="cards-grid">
+                <div class="card feature-card hidden">
+                    <div class="card-icon">📊</div>
+                    <h3>Monitoramento em Tempo Real</h3>
+                    <p>Acompanhe as condições do seu solo 24/7 através do aplicativo</p>
+                </div>
+                <div class="card feature-card hidden">
+                    <div class="card-icon">💰</div>
+                    <h3>Economia de Insumos</h3>
+                    <p>Reduza em até 30% o uso de fertilizantes e água</p>
+                </div>
+                <div class="card feature-card hidden">
+                    <div class="card-icon">📱</div>
+                    <h3>Fácil de Usar</h3>
+                    <p>Interface simples e intuitiva, mesmo para quem não é tech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-box hidden">
+                <h2>Descubra como está a saúde do seu solo</h2>
+                <p>Responda nosso questionário rápido e receba recomendações personalizadas</p>
+                <a href="questionario.html" class="btn btn-large">Começar Agora</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Soil - Agrinho. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="problema.html">O Problema</a>
+                <a href="solucao.html">Solução</a>
+                <a href="questionario.html">Diagnóstico</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

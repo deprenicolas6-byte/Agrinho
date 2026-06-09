@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Problema - Smart Soil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">🌱 Smart Soil</a>
+            <button class="mobile-menu" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="problema.html" class="active">O Problema</a></li>
+                <li><a href="solucao.html">Solução</a></li>
+                <li><a href="questionario.html">Diagnóstico</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>O Problema</h1>
+            <p>Entenda os desafios que os produtores rurais enfrentam diariamente</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="problema-grid">
+                <div class="problema-card hidden">
+                    <div class="problema-icon">👁️</div>
+                    <h3>Baixa Visibilidade</h3>
+                    <p>Condições do solo (pH, umidade, NPK) desconhecidas na maioria das propriedades</p>
+                    <div class="stat-box">
+                        <span class="stat-number">78%</span>
+                        <span class="stat-label">dos produtores não monitoram o solo</span>
+                    </div>
+                </div>
+
+                <div class="problema-card hidden">
+                    <div class="problema-icon">💸</div>
+                    <h3>Uso Ineficiente</h3>
+                    <p>Fertilizantes e insumos aplicados sem critério técnico adequado</p>
+                    <div class="stat-box">
+                        <span class="stat-number">R$ 2.5 bi</span>
+                        <span class="stat-label">perdidos anualmente</span>
+                    </div>
+                </div>
+
+                <div class="problema-card hidden">
+                    <div class="problema-icon">🎲</div>
+                    <h3>Decisões por Tentativa</h3>
+                    <p>Baseadas em erro e experiência, gerando perda de rendimento</p>
+                    <div class="stat-box">
+                        <span class="stat-number">40%</span>
+                        <span class="stat-label">de perda de produtividade</span>
+                    </div>
+                </div>
+
+                <div class="problema-card hidden">
+                    <div class="problema-icon">📉</div>
+                    <h3>Alto Custo Operacional</h3>
+                    <p>Baixo controle dos processos resulta em desperdício de recursos</p>
+                    <div class="stat-box">
+                        <span class="stat-number">35%</span>
+                        <span class="stat-label">de desperdício de insumos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="impacto-box hidden">
+                <h2>Impacto na Agricultura Familiar</h2>
+                <div class="impacto-grid">
+                    <div class="impacto-item">
+                        <h4>🌾 Pequenos Produtores</h4>
+                        <p>Sem acesso a consultoria técnica especializada</p>
+                    </div>
+                    <div class="impacto-item">
+                        <h4>💧 Recursos Naturais</h4>
+                        <p>Degradação do solo e desperdício de água</p>
+                    </div>
+                    <div class="impacto-item">
+                        <h4>💵 Rentabilidade</h4>
+                        <p>Margens de lucro cada vez menores</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-center hidden">
+                <h3>Existe uma solução para isso!</h3>
+                <a href="solucao.html" class="btn btn-primary">Conhecer a Solução</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Smart Soil - Agrinho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
